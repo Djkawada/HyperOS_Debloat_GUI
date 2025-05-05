@@ -169,12 +169,12 @@ def run_adb_command(command, package_name="N/A", step_desc="execute command"):
 
 
 # --- GUI Application Class ---
-class PocoAppManagerGUI:
+class HyperOSAppManagerGUI:
     def __init__(self, master):
         # Add a print to confirm we enter __init__
-        print("--- Entering PocoAppManagerGUI __init__ ---")
+        print("--- Entering HyperOSAppManagerGUI __init__ ---")
         self.master = master
-        master.title("Poco X6 Pro App Manager")
+        master.title("HyperOS App Manager")
         # Set minimum window size (optional)
         master.minsize(800, 600)
 
@@ -309,11 +309,11 @@ class PocoAppManagerGUI:
         self.status_frame.grid_columnconfigure(0, weight=1)
 
         # Initial state
-        self.print_status("Poco X6 Pro App Manager GUI ready.\nConnect your phone, enable USB debugging, authorize your computer, and click 'Connect & Scan Apps'.")
+        self.print_status("HyperOS App Manager GUI ready.\nConnect your phone, enable USB debugging, authorize your computer, and click 'Connect & Scan Apps'.")
         self.print_status("Ensure ADB is installed and in your system PATH.")
         self.print_status("Click on a row to select/deselect it (highlighted in blue). Use filter options above.")
         # Add print to confirm __init__ finished
-        print("--- PocoAppManagerGUI __init__ finished ---")
+        print("--- HyperOS_AppManagerGUI __init__ finished ---")
 
 
     def _configure_tree_tags(self):
@@ -874,7 +874,7 @@ if __name__ == "__main__":
         print("Creating Tkinter root window...")
         root = tk.Tk()
         print("Creating App instance...")
-        app = PocoAppManagerGUI(root)
+        app = HyperOSAppManagerGUI(root)
         print("Starting Tkinter main loop...")
         root.mainloop()
         print("Tkinter main loop exited.")
