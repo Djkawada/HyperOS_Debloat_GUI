@@ -20,6 +20,8 @@ A user-friendly graphical interface (GUI) tool to simplify debloating (removing 
 Even if you use the executable (.exe) version, certain prerequisites related to connecting to your phone are still necessary:
 
 1.  **ADB (Android Debug Bridge) installed and in PATH:** ADB must be installed on your computer and its location added to your system's PATH environment variable.
+    * Download My Other tool to check and Install the latest ADB to your Path at : https://github.com/Djkawada/ADB-Path-Checker-Installer
+OR 
     * Download the latest [SDK Platform-Tools for Windows](https://developer.android.com/tools/releases/platform-tools).
     * Extract the downloaded zip file to a stable location (e.g., `C:\platform-tools`).
     * **Add the `platform-tools` folder path to your system's PATH:**
@@ -29,7 +31,7 @@ Even if you use the executable (.exe) version, certain prerequisites related to 
         * Click "New" and paste the full path to your `platform-tools` folder (e.g., `C:\platform-tools`).
         * Click OK on all windows to save the changes.
         * Open a **new** Command Prompt or PowerShell window and type `adb version` to verify it's working.
-2.  **USB Debugging enabled on your Poco X6 Pro (or other Xiaomi/HyperOS device):**
+2.  **USB Debugging enabled on your device :
     * Go to `Settings` > `About phone`.
     * Tap on the `HyperOS version` (or MIUI version) multiple times (usually 7 times) until you see a message that "Developer options are now enabled".
     * Go back to `Settings` > `Additional settings` > `Developer options`.
@@ -42,7 +44,7 @@ Even if you use the executable (.exe) version, certain prerequisites related to 
 
 This version does **not** require Python or PyInstaller to be installed.
 
-1.  Go to the **[Releases page](https://github.com/YourUsername/HyperOS_Debloat_GUI/releases)** (replace `YourUsername` with your GitHub username) of this GitHub repository.
+1.  Go to the release page : https://github.com/Djkawada/HyperOS_Debloat_GUI/releases/tag/v1.0.0
 2.  Download the latest Windows executable (`.exe`) file. Look in the "Assets" section of the latest release. (If a `--onedir` version was built, the asset will be a `.zip` file containing the `.exe` and other files - download and extract this zip).
 3.  Save the downloaded `.exe` file (or the extracted folder from the zip) to a convenient location on your computer, for example, on your Desktop or in a dedicated folder.
 4.  Ensure you have completed all the **Prerequisites** above (ADB, USB Debugging, Authorization, Cable).
